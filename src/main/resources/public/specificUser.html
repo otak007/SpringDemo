@@ -6,18 +6,28 @@
 
     <p id="demo"></p>
 
-
     <script src="user.js"></script>
 </head>
 
 <body>
-    ID: <input id="identification" type="text" name="id"><br>
-    <button class="myButton" onclick="find(document.getElementById('identification').value)">Find  </button>
+ID: <input id="identification" type="text" name="id"><br>
+<button class="myButton" onclick="find(document.getElementById('identification').value)">Find  </button>
 
-    <p id="name"></p>
-    <p id="age"></p>
-    <p id="man"></p>
-    <p id="nationality"></p>
+<hr>
+<div id="response"></div>
 
+<form id="addPostFrom">
+    <div>
+        <input type="text" id="title" placeholder="Title">
+    </div>
+    <div>
+        <textarea id="body" placeholder="Body"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById('addPostForm').addEventListener('submit ')
+</script>
 </body>
 </html>

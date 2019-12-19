@@ -5,9 +5,13 @@ import org.springframework.data.annotation.Id;
 public class User {
     @Id
     String id;
-    String name, nationality;
+    private String name, nationality;
     int age;
     boolean man;
+
+    public User(String id) {
+        this.id = id;
+    }
 
     public User(String id, String name, int age, boolean man, String nationality) {
         this.id = id;
@@ -15,6 +19,14 @@ public class User {
         this.age = age;
         this.man = man;
         this.nationality = nationality;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
